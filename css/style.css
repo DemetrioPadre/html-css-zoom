@@ -1,3 +1,13 @@
+/*  CUSTOM PROPS */
+
+:root{
+    --header-height:60px;
+    --interactive-bar-height:100px;
+
+}
+
+
+
 /* RESET */
 *{
     margin: 0;
@@ -8,9 +18,11 @@
 /* DEBUG */
 
 .debug{
-    min-height: 80px;
-    border: 2px dashed blue;
+    min-height: 150px;
+    min-width: 200px;
+    border: 2px solid grey;
     padding: 1rem;
+   background-color: grey;
 }
 
 /* UTILS */
@@ -34,6 +46,7 @@ a{
 }
 img{
     max-width: 100%;
+    background-size: cover;
 }
 
 /* WRAPP */
@@ -41,16 +54,43 @@ img{
 .wrapper{
     height: 100vh;
     overflow: hidden;
+    background-color: black;
 }
 
 .header{
-    height: 50px;
+    height: var(--header-height);
+    background-color: black;
+    text-align: right;
+    padding: 10px;
+    
+    
 }
 
 .cams-container{
-    height: calc(100vh - 50px - 100px);
+    height: calc(100vh - var(--header-height) - var(--interactive-bar-height) );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+    gap: 10px;
+    overflow: auto;
 }
 
 .interactive-bar{
-    height: 100px;
+    height: var(--interactive-bar-height);
+    background-color:red;
 }
+
+/* HEADER */
+
+.btn-header{
+background-color: grey;
+color: whitesmoke;
+border-radius: 5px;
+padding: 2px;
+border: none;
+
+
+
+}
+
