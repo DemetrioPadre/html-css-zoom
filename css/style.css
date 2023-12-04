@@ -123,7 +123,8 @@ border: none;
     padding: 10px;
 
 }
-.icon-left{
+.icon-left,
+.icon-center{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -133,4 +134,12 @@ border: none;
     font-size: 20px;
     text-align: center; 
     
+}
+
+.end-bar{
+    background-color: grey;
+    color: red;
+    align-items: center;
+    text-align: center;
+    padding:40px 20px;
 }
