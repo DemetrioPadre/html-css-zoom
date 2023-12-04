@@ -76,10 +76,7 @@ img{
     overflow: auto;
 }
 
-.interactive-bar{
-    height: var(--interactive-bar-height);
-    background-color:red;
-}
+
 
 /* HEADER */
 
@@ -100,21 +97,40 @@ border: none;
 
 /* FOOTER */
 
+.interactive-bar{
+    height: var(--interactive-bar-height);
+    background-color:rgb(58, 54, 54);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .mic{
     position: absolute;
     bottom: 0;
     left: 0;
     color: white;
     padding: 5px 10px;
-    background-color: rgba(128, 128, 128, 0.242);
+    background-color: rgba(128, 128, 128, 0.329);
+    
 }
 
-.icons-left,
+.media-left,
 .media-center{
     display: flex;
     gap: 10px;
+    padding: 10px;
 
 }
-.icons-left{
+.icon-left{
     display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon{
+    font-size: 20px;
+    text-align: center; 
+    
 }
